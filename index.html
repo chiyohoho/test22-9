@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="width: 50%; margin: 20px auto;">
+    <div class="showNumberList" style="margin-bottom: 20px;">
+        <span id="numberList"
+            style="padding: 5px; background: skyblue; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Ta có danh sách gồm các số sau đây : [33,14,26,12,13,7,9,10,102, 205, 379,418,1]
+        </span>
+    </div>
+    <ul id="button_list" style="display: flex;list-style: none; flex-direction: column; gap: 10px; width: fit-content;">
+        <li id="list" class="list_ne" onclick="sortLowToHigh()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Sắp xếp từ bé đến lớn</li>
+        <li id="list" class="list_ne" onclick="sortHighToLow()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Sắp xếp từ lớn đến bé</li>
+        <li id="list" class="list_ne" onclick="sortChiaHetCho2()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Hãy tìm các số chia hết cho 2 và phân loại chúng theo thứ tự từ bé đến lớn</li>
+        <li id="list" class="list_ne" onclick="sortKoChiaHetCho2()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Hãy tìm các số không chia hết cho 2 và phân loại chúng theo thứ tự từ lớn đến bé</li>
+        <li id="list" class="list_ne" onclick="tinhTongCacSo()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Tính tổng các số trong hàm</li>
+        <li id="list" class="list_ne" onclick="timSoLonNhat()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Tìm số lớn nhất trong hàm</li>
+        <li id="list" class="list_ne" onclick="timSoBeNhat()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Tìm số bé nhất trong hàm</li>
+        <li id="list" class="list_ne" onclick="timSoBeThuHai()"
+            style="padding: 5px; background: skyblue; cursor: pointer; border-radius: 3px; font-size: 16px; font-weight: bold;">
+            Tìm số lớn thứ 2 trong hàm</li>
+    </ul>
+
+    <div id="showKetQua" style="margin-top: 50px; font-size: 20px; font-weight: 600;">
+        <span id="content_ketqua"></span>
+    </div>
+
+
+    <!-- javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
