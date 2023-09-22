@@ -116,32 +116,22 @@ const tinhTongCacSo = () => {
 }
 // -----------FUNCTION tìm số lớn nhất trong hàm
 const timSoLonNhat = () => {
-    let number = numberList[0]
-    numberList.map((item) => {
-        if (number.number < item.number) {
-            number = item
-        }
+    numberList.sort((a, b) => {
+        return b.number - a.number
     })
-    numberList = [number]
-    let soLonNhat = numberList.map(item => {
-        return item.number
-    })
-    showKetQua.textContent = `Kết quả của bạn là : ${soLonNhat}`
+
+    let number = numberList[0].number
+    showKetQua.textContent = `Kết quả của bạn là : ${number}`
 
 }
 // -----------FUNCTION tìm số bé nhất trong hàm
 const timSoBeNhat = () => {
-    let number = numberList[0]
-    numberList.map((item) => {
-        if (number.number > item.number) {
-            number = item
-        }
+    numberList.sort((a, b) => {
+        return a.number - b.number
     })
-    numberList = [number]
-    let soBeNhat = numberList.map(item => {
-        return item.number
-    })
-    showKetQua.textContent = `Kết quả của bạn là : ${soBeNhat}`
+
+    let number = numberList[0].number
+    showKetQua.textContent = `Kết quả của bạn là : ${number}`
 
 }
 // -----------FUNCTION tìm số bé thứ hai trong hàm
